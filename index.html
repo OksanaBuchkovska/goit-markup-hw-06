@@ -481,26 +481,25 @@
             </li>
           </ul>
         </div>
-        <form class="form">
-          <label for="user-email" class="form-label">
-            Підпишіться на розсилку</label
-          >
-          <input
-            class="form-input"
-            type="email"
-            name="email"
-            id="user-email"
-            placeholder="E-mail"
-          />
-          <button type="submit" class="form-btn">
-            Підписатися
+        <!-- --------------------розсилка---------- -->
+        <form class="footer-form">
+          <div class="footer-field">
+            <p class="form-text">Підпишіться на розсилку</p>
+            <input
+              class="form-input"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="form-btn">Підписатися</button>
             <svg class="send-icon" width="24" height="24">
               <use href="./img/icons.svg/sprite.svg#icon-send"></use>
             </svg>
-          </button>
+          </div>
         </form>
       </div>
     </footer>
+    <!-- ---------------------Modal-------------- -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close" data-modal-close>
@@ -511,35 +510,37 @@
         <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
         <form class="modal-form">
           <div class="modal-field">
-            <label class="modal-form" for="user-name">Ім'я</label>
+            <label for="user-name" class="modal-label">Ім'я</label>
             <input
               type="name"
               class="modal-input"
               name="user-name"
-              placeholder="Введіть ім'я"
               id="user-name"
+              placeholder=" "
             />
           </div>
           <div class="modal-field">
-            <label class="modal-form" for="user-tel">Телефон</label>
+            <label for="user-tel" class="modal-label">Телефон</label>
             <input
               type="tel"
               class="modal-input"
               name="user-tel"
-              placeholder="Введіть телефон"
+              id="user-tel"
+              placeholder=" "
             />
           </div>
           <div class="modal-field">
-            <label class="modal-form" for="user-email">Пошта</label>
+            <label for="user-email" class="modal-label">Пошта</label>
             <input
               type="email"
               class="modal-input"
               name="user-email"
-              placeholder="Введіть пошту"
+              id="user-email"
+              placeholder=" "
             />
           </div>
           <div class="modal-field">
-            <label class="modal-form" for="user-text">Коментар</label>
+            <label for="user-text" class="modal-label">Коментар</label>
             <textarea
               class="modal-text"
               name="user-text"
@@ -547,23 +548,19 @@
               placeholder="Введіть текст"
             ></textarea>
           </div>
-          <!-- <label for="big"
-            >Погоджуюся з розсилкою та приймаю Умови договору</label
-          >
-          <input type="checkbox" name="big" id="big" value="big" /> -->
-          <label class="">
-            <input class="" type="checkbox" name="checkbox" />
-            <div class="">
-              <svg class="">
+          <label class="check-label">
+            <input class="check-input" type="checkbox" name="checkbox" />
+            <div class="check-svg">
+              <!-- <svg class="">
                 <use></use>
               </svg>
               <svg class="icon2">
                 <use></use>
-              </svg>
+              </svg> -->
             </div>
-            <span class=""
+            <span class="contract"
               >Погоджуюся з розсилкою та приймаю
-              <a class="" href="">Умови договору</a></span
+              <a class="contract-link" href="">Умови договору</a></span
             >
           </label>
           <button type="submit">submit</button>
