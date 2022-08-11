@@ -764,8 +764,7 @@ img {
   transition: border-color var(--timing-function);
 }
 
-.modal-input:focus,
-.textarea-text:focus {
+.modal-input:focus {
   border-color: #2196f3;
 }
 
@@ -785,14 +784,6 @@ img {
   transition: fill var(--timing-function);
 }
 
-/* .modal-input:not(:focus):not(:placeholder-shown):valid {
-  background-color: var(--primary-bg-color);
-}
-
-.modal-input:not(:focus):not(:placeholder-shown):invalid {
-  background-color: rgba(225, 224, 174, 0.9);
-} */
-
 .textarea-text {
   width: 448px;
   height: 120px;
@@ -809,24 +800,23 @@ img {
   outline: transparent;
 }
 
-/* --------------Chekbox------------ */
-
-.check-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
+.textarea-text:focus {
+  border-color: #2196f3;
 }
 
+/* --------------Chekbox------------ */
+
 .check-label {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+  display: flex;
+  align-items: center;
 }
 
 .check-label span {
+  width: 16px;
+  height: 15px;
+  border: 2px solid #303030;
+  border-radius: 2px;
+  margin-right: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -834,15 +824,21 @@ img {
 
 .check-ikon {
   fill: transparent;
+  opacity: 0;
 }
 
-.check-input:checked + .check-label span {
-  background-color: #188ce8;
+.modal-check:checked + .check-label span {
+  background-color: var(--accent-color);
   border: none;
 }
 
-.check-input:checked + .check-label .check-ikon {
-  fill: #ffffff;
+.modal-check:focus + .check-label span {
+  border-color: #000000;
+}
+
+.modal-check:checked + .check-label .check-ikon {
+  fill: var(--primary-bg-color);
+  opacity: 1;
 }
 
 .contract-link {

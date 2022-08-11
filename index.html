@@ -501,7 +501,7 @@
     <!-- -------------------------Модальне вікно------------------------------->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-close" data-modal-close>
+        <button type="button" class="modal-close" data-modal-close>
           <svg class="icon-close" width="11" height="11">
             <use href="./img/icons.svg/sprite.svg#icon-close"></use>
           </svg>
@@ -509,7 +509,7 @@
         <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
         <form class="modal-form">
           <div class="modal-field">
-            <label for="user-name" class="modal-label">Ім'я</label>
+            <label class="modal-label" for="user-name">Ім'я</label>
             <div class="input-wrap">
               <input
                 type="name"
@@ -524,7 +524,7 @@
             </div>
           </div>
           <div class="modal-field">
-            <label for="user-tel" class="modal-label">Телефон</label>
+            <label class="modal-label" for="user-tel">Телефон</label>
             <div class="input-wrap">
               <input
                 type="tel"
@@ -539,7 +539,7 @@
             </div>
           </div>
           <div class="modal-field">
-            <label for="user-email" class="modal-label">Пошта</label>
+            <label class="modal-label" for="user-email">Пошта</label>
             <div class="input-wrap">
               <input
                 type="email"
@@ -554,7 +554,7 @@
             </div>
           </div>
           <div class="modal-field">
-            <label for="user-text" class="modal-label">Коментар</label>
+            <label class="modal-label" for="user-text">Коментар</label>
             <textarea
               class="textarea-text"
               name="user-text"
@@ -563,15 +563,15 @@
             ></textarea>
           </div>
           <!----------------------------chekbox-------------------->
-          <div class="check-box">
+          <div class="modal-field">
             <input
-              class="check-input visually-hidden"
+              class="modal-check visually-hidden"
               type="checkbox"
-              name="checkbox"
-              id="checkbox"
+              name="policy"
+              id="policy"
               value="true"
             />
-            <label for="checkbox" class="check-label"
+            <label for="policy" class="check-label"
               ><span
                 ><svg class="check-ikon" width="16" height="15">
                   <use href="./img/icons.svg/sprite.svg#icon-check"></use>
@@ -582,17 +582,6 @@
               ></label
             >
           </div>
-
-          <!-- <div class="check-svg">
-            <svg class="check-ikon" width="16" height="15">
-              <use href="./img/icons.svg/sprite.svg#icon-check"></use>
-            </svg>
-            <svg class="check-icon" width="16" height="15">
-              <use href="./img/icons.svg/sprite.svg#icon-vector1"></use>
-            </svg>
-          </div> -->
-          <!-- <span class="contract"> </span> -->
-
           <div class="check-btn">
             <button type="submit" class="modal-btn">Відправити</button>
           </div>
