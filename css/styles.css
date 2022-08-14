@@ -741,6 +741,7 @@ img {
 }
 
 .modal-label {
+  display: block;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -784,7 +785,12 @@ img {
   transition: fill var(--timing-function);
 }
 
+.modal-text {
+  margin-bottom: 20px;
+}
+
 .textarea-text {
+  display: block;
   width: 448px;
   height: 120px;
   padding: 12px 16px;
@@ -806,9 +812,19 @@ img {
 
 /* --------------Chekbox------------ */
 
+.modal-check-box {
+  margin-bottom: 30px;
+}
+
 .check-label {
   display: flex;
+  justify-content: center;
   align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
 
 .check-label span {
@@ -849,7 +865,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
 }
 
 .modal-btn {
