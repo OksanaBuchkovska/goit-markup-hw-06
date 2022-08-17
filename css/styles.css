@@ -159,7 +159,7 @@ img {
 
 /* --------------------Герой--------------------- */
 
-/* .hero {
+.hero {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -192,27 +192,9 @@ img {
   color: var(--second-title-text-color);
 }
 
-.hero-btn {
-  min-width: 216px;
-  cursor: pointer;
-  border: none;
-  border-radius: 4px;
+.hero-button {
   padding: 10px 32px;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  color: var(--second-title-text-color);
-  background-color: var(--accent-color);
-  transition: background-color var(--timing-function);
 }
-
-.hero-btn:hover,
-.hero-btn:focus {
-  background-color: #188ce8;
-} */
 
 /* -----------------------Переваги------------------- */
 
@@ -238,11 +220,7 @@ img {
 
 .features-title {
   margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  text-align: start;
 }
 
 .features-text {
@@ -277,9 +255,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-/* -----------------назва------------ */
-
-.work-name {
+.work-wrap {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -290,13 +266,16 @@ img {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.work-text {
+.subtitle {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.work-title {
   color: var(--second-title-text-color);
 }
 
@@ -324,7 +303,7 @@ img {
   padding-bottom: 30px;
 }
 
-.team-subtitle {
+.team-title {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -337,7 +316,7 @@ img {
   margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
@@ -430,11 +409,11 @@ img {
   color: var(--second-title-text-color);
 }
 
-.connect {
+.address-item {
   margin-bottom: 9px;
 }
 
-.connect:last-child {
+.address-item:last-child {
   margin-bottom: 0;
 }
 
@@ -471,13 +450,10 @@ img {
 .footer-soc {
   margin-left: 70px;
 }
+
 .footer-title {
   margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  text-align: start;
   color: var(--second-title-text-color);
 }
 
@@ -520,29 +496,11 @@ img {
   color: var(--second-title-text-color);
 }
 
-.form-btn {
+.form-button {
   position: relative;
-  min-width: 200px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 28px;
-  cursor: pointer;
-  border: none;
-  border-radius: 4px;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  color: var(--second-title-text-color);
-  background-color: var(--accent-color);
-  transition: background-color var(--timing-function);
-}
-
-.form-btn:hover,
-.form-btn:focus {
-  background-color: #188ce8;
 }
 
 .send-icon {
@@ -724,8 +682,6 @@ img {
   fill: var(--accent-color);
 }
 
-/* ---------------оформлення------------- */
-
 .modal-title {
   margin-bottom: 12px;
   font-weight: 700;
@@ -867,10 +823,13 @@ img {
   align-items: center;
 }
 
-.modal-btn {
-  min-width: 200px;
+.modal-button {
   padding: 10px 52px;
+}
+
+.btn {
   cursor: pointer;
+  min-width: 200px;
   border: none;
   border-radius: 4px;
   font-family: inherit;
@@ -884,7 +843,7 @@ img {
   transition: background-color var(--timing-function);
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
+.btn:hover,
+.btn:focus {
   background-color: #188ce8;
 }
